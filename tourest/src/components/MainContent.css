@@ -1,0 +1,51 @@
+.main-content {
+    padding: 20px;
+}
+
+.hero {
+    text-align: center;
+    background: url('../../public/images/images1.jpg') center center;
+    background-size: cover;
+    color: white;
+    padding: 100px 20px;
+}
+
+.gallery {
+    margin-top: 40px;
+}
+
+.gallery h2 {
+    margin-bottom: 20px;
+}
+
+.gallery .images {
+    display: flex;
+    flex-wrap: wrap; /* Allows wrapping of boxes to the next line */
+    gap: 10px; 
+    justify-content: center; /* Centers the images */
+}
+.gallery-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 2);
+  }
+.gallery .images .gallery-box {
+    width: 200px; /* Set the width of each box */
+    height: 150px; /* Set the height of each box */
+    overflow: hidden; /* Hide any overflow */
+    border: 1px solid #ccc; /* Optional: Add a border for better visualization */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visualization */
+    border-radius: 8px; /* Optional: Add rounded corners */
+}
+
+.gallery .images .gallery-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Resize the image to cover the box */
+}
+
+.details {
+    margin-top: 40px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+}
